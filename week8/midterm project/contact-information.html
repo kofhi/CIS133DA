@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Dog's Life</title>
     <link rel="stylesheet" href="dogs-life.css">
+    <script src="https://kit.fontawesome.com/895df3ea9d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <header>
-        <div>
-            <a href="index.html">
-                <img src="./images/dogs-life-logo.svg" alt="A Dog's Life Logo">
-            </a>
+        <div class="header-box">
+            <div>
+                <a href="index.html">
+                    <img src="./images/dogs-life-logo.svg" alt="A Dog's Life Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="menu"><a href="index.html">Home</a></li>
+                    <li class="menu dropdown">
+                        <a href="javascript:void(0)" class="dropdown-button">Grooming Services <i class="fa-solid fa-chevron-down fa-xs"></i></a> 
+                        <div class="dropdown-menu">
+                            <a href="grooming-services.html">Grooming Services</a>
+                            <a href="select-good-pet.html">How to Select a Good Pet</a>
+                        </div>
+                    </li>
+                    <li class="menu"><a href="store-map.html">Map to Store</a></li>
+                    <li class="here menu"><a href="contact-information.html">Contact Information</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li class="menu"><a href="index.html">Home</a></li>
-                <li class="menu dropdown">
-                    <a href="javascript:void(0)" class="dropdown-button">Grooming Services</a>
-                    <div class="dropdown-menu">
-                        <a href="grooming-services.html">Grooming Services</a>
-                        <a href="select-good-pet.html">How to Select a Good Pet</a>
-                    </div>
-                </li>
-                <li class="menu"><a href="store-map.html">Map to Store</a></li>
-                <li class="here menu"><a href="contact-information.html">Contact Information</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
@@ -36,7 +39,7 @@
                 <div id="appointment-form">
                     <h1>Book an appointment</h1>
                     <p><span class="required">*</span> Indicates required field</p>
-                    <form action="#">
+                    <form action="form-submit.html" method="post">
                         <div id="user-details">
                             <label for="first-name last-name">Name <span class="required">*</span></label>
                             <div id="fullname">
@@ -118,7 +121,20 @@
                                     Sanitary Trim 
                                     <br>
                                 </label> 
-
+                            </div>
+                        </div>
+                        <div id="appointment-details">
+                            <div id="date-field">
+                                <label for="date">Appointment Date <span class="required">*</span></label>
+                                <div id="date-appointment">
+                                    <input type="date" name="date" id="date" required>
+                                </div>
+                            </div>
+                            <div id="time-field">
+                                <label for="time">Time <span class="required">*</span></label>
+                                <div id="time-appointment">
+                                    <input type="time" name="time" id="time" required>
+                                </div>
                             </div>
                         </div>
                         <div id="form-submit">
@@ -143,7 +159,7 @@
 
     <footer>
         <p>© 2023 A Dog’s Life – All Rights Reserved.<br>
-        E McKellips Rd, Scottsdale, AZ 85257 | (602) 662-6262 | adogslife@gmail.com</p>
+        E McKellips Rd, Scottsdale, AZ 85257 | (602) 662-6262 | <a class="email" href="mailto:adogslife@gmail.com">adogslife@gmail.com</a></p>
     </footer>
 </body>
 </html>

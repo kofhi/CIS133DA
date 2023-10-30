@@ -10,15 +10,17 @@ body {
 header {
     grid-area: header;
     background-color: #FFFAF4;
-    display: flex;
-    gap: 10px;
-    justify-content: space-around;
-    align-items: center;
-}
-
-header div {
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-box {
+    max-width: 85%;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15%;
 }
 
 header img {
@@ -35,7 +37,7 @@ nav li {
 }
 
 .menu a:hover {
-    color: rgb(234, 127, 145);
+    color: #e79157;
 }
 
 nav a:hover, nav a:focus, nav a:active, .here a {
@@ -107,7 +109,7 @@ nav a {
 }
 
 .dropdown-menu a:hover { 
-    background-color: pink;
+    background-color: #f5c4a2;
     color: #6688c4;
 }
 
@@ -129,6 +131,15 @@ footer {
     color: white;
     grid-area: footer;
     padding: 2px 0;
+}
+
+.email {
+    text-decoration: none;
+    color: #2c5eb5;
+}
+
+.email:hover {
+    color: #FFFAF4;
 }
 
 header, footer {
@@ -201,7 +212,6 @@ header, footer {
     justify-content: center;
     align-items: center;
     height: 100%;
-    color: #fff;
 }
 
 #controls {
@@ -255,7 +265,7 @@ header, footer {
     width: 10px;
     height: 10px;
     border-radius:100%;
-    background: #ccc;
+    background: #f5c4a2;
     margin: 0 10px;
 }
 
@@ -264,7 +274,7 @@ header, footer {
 #slide3:checked ~ #bullets label:nth-child(3), 
 #slide4:checked ~ #bullets label:nth-child(4),
 #slide5:checked ~ #bullets label:nth-child(5) {
-    background: #444;
+    background: #e79157;
 }
 
 #home-box {
@@ -299,6 +309,101 @@ header, footer {
 #intro button:hover {
     background-color: #FFFAF4;
     color: #F4B183;
+}
+
+#client-reviews {
+    max-width: 85%;
+    margin: 40px auto;
+    padding: 10px 0 30px 0;
+
+    background-color: #6688c4;
+    border-radius: 50px;
+}
+
+#reviews-heading {
+    width: 90%;
+    margin: 20px auto;
+
+    text-align: center;
+    justify-content: center;
+    color: #FFFAF4;
+    font-size: larger;
+    text-transform: capitalize;
+}
+
+#reviews-heading h1 {
+    margin: 5px;
+}
+
+#reviews {
+    width: 92%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.review-box {
+    width: 40%;
+    background-color: #FFFAF4;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+
+.review-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.stars {
+    color: #f8cf60;
+}
+
+.client {
+    color: #5075b6;
+    font-size: larger;
+    letter-spacing: 0.8px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.review-comment h2 {
+    margin: 10px 0 ;
+}
+
+.review-comment p {
+    margin: 0 0 8px 0;
+    text-align: justify;
+    line-height: 1.2em;
+    letter-spacing: 0.6px;
+}
+
+.review-comment {
+    color: #5075b6;
+}
+
+#write-review {
+    width: 15%;
+    background-color: #FFFAF4; 
+    border: none;
+    border-radius: 30px;
+    color: #5075b6;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#write-review span {
+    margin-bottom: 10px;
+}
+
+#write-review:hover {
+    background-color: #F4B183;
+    color: #FFFAF4;
 }
 
 #holder {
@@ -662,13 +767,13 @@ header, footer {
     background: #e79157;
 }
 
-#contact-info {
+#contact-info, #contact-info-confirm {
     display: flex;
     max-width: 85%;
     margin: 20px auto 50px auto;
 }
 
-#appointment {
+#appointment, #confirmation {
     width: 55%;
     padding: 20px 0;
 
@@ -694,6 +799,16 @@ header, footer {
     color: #eee7dd;
 }
 
+#confirmation-note {
+    width: 85%;
+    margin: auto;
+
+    padding-top: 15px;
+    text-align: center;
+    font-size: larger;
+    color: #FFFAF4;
+}
+
 .required {
     color: #F4B183;
 }
@@ -703,33 +818,41 @@ header, footer {
     line-height: 35px;
 }
 
-#user-details, #user-contact, #pet-info, #groomingoptions, #form-submit {
+#user-details, #user-contact, #pet-info, #groomingoptions, #appointment-details, #form-submit {
     margin: 20px 0;
     width: 100%;
 }
 
-#user-details label, #user-contact label, #petbreed label, #petsize label, #groomingoptions label {
+#user-details label, #user-contact label, #petbreed label, #petsize label, #groomingoptions label, #appointment-details label {
     font-size: 26px;
 }
 
 #appointment-form input[type=text],
 #appointment-form input[type=email],
+#appointment-form input[type=date],
+#appointment-form input[type=time],
 #appointment-form select {
     background-color: #FFFAF4;
     border: none;
     border-radius: 6px;
 }
 
-#fullname, #pet-info {
+#fullname, #pet-info, #appointment-details {
     display: flex;
     padding: 0;
 }
 
-#fname, #petbreed {
+#fname, #petbreed, #date-field {
     width: 45%;
 }
 
-#fname input[type=text], #lname input[type=text], #email-field input[type=email], #petbreed input[type=text], #petsize select {
+#fname input[type=text], 
+#lname input[type=text], 
+#email-field input[type=email], 
+#petbreed input[type=text], 
+#petsize select, 
+#date-appointment input[type=date], 
+#time-appointment input[type=time] {
     box-sizing: border-box;
     width: 100%;
     padding: 10px 10px;
@@ -738,13 +861,13 @@ header, footer {
     font-size: large;
 }
 
-#fname input[type=text]:focus, #lname input[type=text]:focus, #email-field input[type=email]:focus, #petbreed input[type=text]:focus, #petsize select:focus {
+#fname input[type=text]:focus, #lname input[type=text]:focus, #email-field input[type=email]:focus, #petbreed input[type=text]:focus, #petsize select:focus, #date-appointment input[type=date]:focus, #time-appointment input[type=time]:focus {
     outline: none;
     border: 4px solid #F4B183;
     background-color: #fff0da;
 }
 
-#lname, #petsize {
+#lname, #petsize, #time-field {
     flex: 1;
     margin-left: 5%;
 }
@@ -834,6 +957,7 @@ input[type=checkbox]:checked::before {
     border-color: #F4B183;
     color: #FFFAF4;
 }
+
 #contact {
     width: 30%;
     margin-left: 5%;
@@ -844,11 +968,25 @@ input[type=checkbox]:checked::before {
     color: #6688c4;
 }
 
-#contact address {
+#contact-confirm {
+    width: 30%;
+    margin-left: 5%;
+    padding: 20px;
+
+    font-size: x-large;
+
+    color: #6688c4;
+}
+
+#contact-confirm h1 {
+    margin: 1px;
+}
+
+#contact address, #contact-confirm address {
     font-style: normal;
 }
 
-#contact a {
+#contact a, #contact-confirm a {
     text-decoration: none;
     color: #e79157;
 }

@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Dog's Life</title>
     <link rel="stylesheet" href="dogs-life.css">
+    <script src="https://kit.fontawesome.com/895df3ea9d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <header>
-        <div>
-            <a href="index.html">
-                <img src="./images/dogs-life-logo.svg" alt="A Dog's Life Logo">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li class="menu"><a href="index.html">Home</a></li>
-                <li class="here menu dropdown">
-                    <a href="javascript:void(0)" class="dropdown-button">Grooming Services</a>
-                    <div class="dropdown-menu">
-                        <a href="grooming-services.html">Grooming Services</a>
-                        <a href="select-good-pet.html">How to Select a Good Pet</a>
-                    </div>
-                </li>
-                <li class="menu"><a href="store-map.html">Map to Store</a></li>
-                <li class="menu"><a href="contact-information.html">Contact Information</a></li>
-            </ul>
-        </nav>
+        <div class="header-box">
+            <div>
+                <a href="index.html">
+                    <img src="./images/dogs-life-logo.svg" alt="A Dog's Life Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="menu"><a href="index.html">Home</a></li>
+                    <li class="here menu dropdown">
+                        <a href="javascript:void(0)" class="dropdown-button">Grooming Services <i class="fa-solid fa-chevron-down fa-xs"></i></a> 
+                        <div class="dropdown-menu">
+                            <a href="grooming-services.html">Grooming Services</a>
+                            <a href="select-good-pet.html">How to Select a Good Pet</a>
+                        </div>
+                    </li>
+                    <li class="menu"><a href="store-map.html">Map to Store</a></li>
+                    <li class="menu"><a href="contact-information.html">Contact Information</a></li>
+                </ul>
+            </nav>
+        </div>ß
     </header>
 
     <main id="colored">
@@ -142,7 +145,7 @@
 
     <footer>
         <p>© 2023 A Dog’s Life – All Rights Reserved.<br>
-        E McKellips Rd, Scottsdale, AZ 85257 | (602) 662-6262 | adogslife@gmail.com</p>
+        E McKellips Rd, Scottsdale, AZ 85257 | (602) 662-6262 | <a class="email" href="mailto:adogslife@gmail.com">adogslife@gmail.com</a></p>
     </footer>
 </body>
 </html>

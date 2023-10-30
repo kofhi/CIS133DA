@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Dog's Life</title>
     <link rel="stylesheet" href="dogs-life.css">
+    <script src="https://kit.fontawesome.com/895df3ea9d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <header>
-        <div>
-            <a href="index.html">
-                <img src="./images/dogs-life-logo.svg" alt="A Dog's Life Logo">
-            </a>
+        <div class="header-box">
+            <div>
+                <a href="index.html">
+                    <img src="./images/dogs-life-logo.svg" alt="A Dog's Life Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="here menu"><a href="index.html">Home</a></li>
+                    <li class="menu dropdown">
+                        <a href="javascript:void(0)" class="dropdown-button">Grooming Services <i class="fa-solid fa-chevron-down fa-xs"></i></a> 
+                        <div class="dropdown-menu">
+                            <a href="grooming-services.html">Grooming Services</a>
+                            <a href="select-good-pet.html">How to Select a Good Pet</a>
+                        </div>
+                    </li>
+                    <li class="menu"><a href="store-map.html">Map to Store</a></li>
+                    <li class="menu"><a href="contact-information.html">Contact Information</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li class="here menu"><a href="index.html">Home</a></li>
-                <li class="menu dropdown">
-                    <a href="javascript:void(0)" class="dropdown-button">Grooming Services</a>
-                    <div class="dropdown-menu">
-                        <a href="grooming-services.html">Grooming Services</a>
-                        <a href="select-good-pet.html">How to Select a Good Pet</a>
-                    </div>
-                </li>
-                <li class="menu"><a href="store-map.html">Map to Store</a></li>
-                <li class="menu"><a href="contact-information.html">Contact Information</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
@@ -44,27 +47,27 @@
                         <div class="inner">
                             <div class="slide slide_1">
                                 <div class="slide-content">
-                                    <img src="./images/happy-dog-bath.jpg" alt="">
+                                    <img src="./images/happy-dog-bath.jpg" alt="Dog happily enjoying a bath">
                                 </div>
                             </div>
                             <div class="slide slide_2">
                                 <div class="slide-content">
-                                    <img src="./images/calm-dog-bath.jpg" alt="">
+                                    <img src="./images/calm-dog-bath.jpg" alt="Dog calmly enjoying a bath">
                                 </div>
                             </div>
                             <div class="slide slide_3">
                                 <div class="slide-content">
-                                    <img src="./images/happy-dog-brush.jpg" alt="">
+                                    <img src="./images/happy-dog-brush.jpg" alt="Dog happy having their fur brushed">
                                 </div>
                             </div>
                             <div class="slide slide_4">
                                 <div class="slide-content">
-                                    <img src="./images/calm-dog-trim.jpg" alt="">
+                                    <img src="./images/calm-dog-trim.jpg" alt="Dog being calm while having a face trim">
                                 </div>
                             </div>
                             <div class="slide slide_5">
                                 <div class="slide-content">
-                                    <img src="./images/happy-dog-trim.jpg" alt="">
+                                    <img src="./images/happy-dog-trim.jpg" alt="Dog happily waiting to be trimmed">
                                 </div>
                             </div>
                         </div>
@@ -97,12 +100,69 @@
             </div>
         </div>
 
+        <div id="client-reviews">
+            <div id="reviews-heading">
+                <h1>Reviews from our clients</h1>
+            </div>
+
+            <div id="reviews">
+                <div class="review-box">
+                    <div class="review-top">
+                        <div class="stars">
+                            <span class="fa fa-star fa-xl"></span>
+                            <span class="fa fa-star fa-xl"></span>
+                            <span class="fa fa-star fa-xl"></span>
+                            <span class="fa fa-star fa-xl"></span>
+                            <span class="fa fa-star fa-xl"></span>
+                        </div>
+                        <div class="client">
+                            <p>
+                                <span class="name">Amy M.</span> - 07/20/2023
+                            </p>
+                        </div>
+                    </div>
+                    <div class="review-comment">
+                        <h2>Great service, friendly people!</h2>
+                        <p>
+                                We will surely come back here again. The staff was very accomodating and made sure my pup was relaxed all throughout the grooming process. He came out very happy and very fluffy right after!
+                        </p>
+                    </div>
+                </div>
+                <div class="review-box">
+                    <div class="review-top">
+                        <div class="stars">
+                            <span class="fa fa-star fa-xl"></span>
+                            <span class="fa fa-star fa-xl"></span>
+                            <span class="fa fa-star fa-xl"></span>
+                            <span class="fa fa-star fa-xl"></span>
+                            <span class="fa fa-star fa-xl"></span>
+                        </div>
+                        <div class="client">
+                            <p>
+                                <span class="name">Pomni J.</span> - 03/23/2023
+                            </p>
+                        </div>
+                    </div>
+                    <div class="review-comment">
+                        <h2>Very skilled stylists!</h2>
+                        <p>
+                                I am really picky about my pet's haircut so I was a bit skeptical of trying out a new grooming service, but they did an amazing job! The stylists made sure to communicate with us to get everything right and precise, which I don't see quite often now. 
+                        </p>
+                    </div>
+                </div>
+                <button id="write-review" onclick="window.open('https://www.yelp.com/writeareview/biz/3o6Hkz8DDY5fOQOLQuezvg?review_origin=writeareview-search','_blank')">
+                    <span class="fa-regular fa-pen-to-square fa-3x"></span> <br>
+                    Write your review!
+                </button>
+            </div>
+            
+        </div>
 
     </main>
 
     <footer>
         <p>© 2023 A Dog’s Life – All Rights Reserved.<br>
-        E McKellips Rd, Scottsdale, AZ 85257 | (602) 662-6262 | adogslife@gmail.com</p>
+        E McKellips Rd, Scottsdale, AZ 85257 | (602) 662-6262 | <a class="email" href="mailto:adogslife@gmail.com">adogslife@gmail.com</a></p>
     </footer>
 </body>
 </html>
