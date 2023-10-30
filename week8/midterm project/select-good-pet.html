@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Dog's Life</title>
+    <link rel="stylesheet" href="dogs-life.css">
+</head>
+<body>
+    
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="./images/dogs-life-logo.svg" alt="A Dog's Life Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li class="menu"><a href="index.html">Home</a></li>
+                <li class="here menu dropdown">
+                    <a href="javascript:void(0)" class="dropdown-button">Grooming Services</a>
+                    <div class="dropdown-menu">
+                        <a href="grooming-services.html">Grooming Services</a>
+                        <a href="select-good-pet.html">How to Select a Good Pet</a>
+                    </div>
+                </li>
+                <li class="menu"><a href="store-map.html">Map to Store</a></li>
+                <li class="menu"><a href="contact-information.html">Contact Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="guide-title">
+            <h1>
+                Looking to get a furry friend? <br>
+                Here's a <em id="guide">Guide to Select a Good Pet</em>
+            </h1>
+        </div>
+
+        <div id="pet-guide">
+            <input type="radio" name="slider" id="part1" checked>
+            <input type="radio" name="slider" id="part2">
+            <input type="radio" name="slider" id="part3">
+            <input type="radio" name="slider" id="part4">
+            <input type="radio" name="slider" id="part5">
+            <div id="pet-slides">
+                <div class="overflow">
+                    <div class="inner">
+                        <div class="part slide_1">
+                            <div class="guide-content">
+                                <div class="guide-pic">
+                                    <img src="./images/happy-dog-bath.jpg" alt="">
+                                </div>
+                                <div class="guide-txt">
+                                    <ol>
+                                        <li>Do you (or someone you live with) have allergies?</li>
+                                    </ol>
+                                    <br>
+                                    <p>
+                                        Safety comes first! You wouldn't want to trigger allergic reactions all the time. You can choose to have "low-allergen" pets to avoid such problems.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part slide_2">
+                            <div class="guide-content">
+                                <div class="guide-pic">
+                                    <img src="./images/happy-dog-bath.jpg" alt="">
+                                </div>
+                                <div class="guide-txt">
+                                    <ol start="2">
+                                        <li>Young and energetic or older but calm?</li>
+                                    </ol>
+                                    <br>
+                                    <p>
+                                        Puppies may be cute but taking care of them take a lot of hard work and training. They will be full of energy and ready ensue chaos. If you're not prepared for that, consider adopting an older dog.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part slide_3">
+                            <div class="guide-content">
+                                <div class="guide-pic">
+                                    <img src="./images/happy-dog-bath.jpg" alt="">
+                                </div>
+                                <div class="guide-txt">
+                                    <ol start="3">
+                                        <li>Are you able to handle their personality and temperment?</li>
+                                    </ol>
+                                    <br>
+                                    <p>
+                                        Different breeds have different personalities, and some dogs have their own unique quirks. Try to interact with them before you adopt to see if they are the right fit for you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part slide_4">
+                            <div class="guide-content">
+                                <div class="guide-pic">
+                                    <img src="./images/happy-dog-bath.jpg" alt="">
+                                </div>
+                                <div class="guide-txt">
+                                    <ol start="4">
+                                        <li>Does your lifestyle allow for you to take care of them?</li>
+                                    </ol>
+                                    <br>
+                                    <p>
+                                        Some dogs reqiure more attention, exercise, and maintenance than others. If you are usually not at home and cannot handle the extra work, it's best to stay away from those breeds.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part slide_5">
+                            <div class="guide-content">
+                                <div class="guide-pic">
+                                    <img src="./images/happy-dog-bath.jpg" alt="">
+                                </div>
+                                <div class="guide-txt">
+                                    <ol start="5">
+                                        <li>Can you financially afford taking care of them?</li>
+                                    </ol>
+                                    <br>
+                                    <p>
+                                        Taking care of pets will cost you a lot of money to keep them healthy and provide the necessities they need. Some breeds might also need more things than others, so keep that in mind. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="controller">
+                <label for="part1"></label>
+                <label for="part2"></label>
+                <label for="part3"></label>
+                <label for="part4"></label>
+                <label for="part5"></label>
+            </div>
+            <div id="dots">
+                <label for="part1"></label>
+                <label for="part2"></label>
+                <label for="part3"></label>
+                <label for="part4"></label>
+                <label for="part5"></label>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 A Dog’s Life – All Rights Reserved.<br>
+        E McKellips Rd, Scottsdale, AZ 85257 | (602) 662-6262 | adogslife@gmail.com</p>
+    </footer>
+</body>
+</html>

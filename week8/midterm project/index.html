@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Dog's Life</title>
+    <link rel="stylesheet" href="dogs-life.css">
+</head>
+<body>
+    
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="./images/dogs-life-logo.svg" alt="A Dog's Life Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li class="here menu"><a href="index.html">Home</a></li>
+                <li class="menu dropdown">
+                    <a href="javascript:void(0)" class="dropdown-button">Grooming Services</a>
+                    <div class="dropdown-menu">
+                        <a href="grooming-services.html">Grooming Services</a>
+                        <a href="select-good-pet.html">How to Select a Good Pet</a>
+                    </div>
+                </li>
+                <li class="menu"><a href="store-map.html">Map to Store</a></li>
+                <li class="menu"><a href="contact-information.html">Contact Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="home-box">
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <input type="radio" name="slider" id="slide5">
+                <div id="slides">
+                    <div class="overflow">
+                        <div class="inner">
+                            <div class="slide slide_1">
+                                <div class="slide-content">
+                                    <img src="./images/happy-dog-bath.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="slide slide_2">
+                                <div class="slide-content">
+                                    <img src="./images/calm-dog-bath.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="slide slide_3">
+                                <div class="slide-content">
+                                    <img src="./images/happy-dog-brush.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="slide slide_4">
+                                <div class="slide-content">
+                                    <img src="./images/calm-dog-trim.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="slide slide_5">
+                                <div class="slide-content">
+                                    <img src="./images/happy-dog-trim.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                </div>
+                <div id="bullets">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                </div>
+            </div>
+
+            <div id="intro">
+                <h1>Providing a clean and happy life for your pet!</h1>
+
+                <p>
+                    The staff here is focused on improvement, working each and every day to learn something new. All the animals that stay with us have a great time!
+                </p>
+
+                <button onclick="window.location.href='grooming-services.html'">Learn about our Services</button>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>© 2023 A Dog’s Life – All Rights Reserved.<br>
+        E McKellips Rd, Scottsdale, AZ 85257 | (602) 662-6262 | adogslife@gmail.com</p>
+    </footer>
+</body>
+</html>

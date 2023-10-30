@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Dog's Life</title>
+    <link rel="stylesheet" href="dogs-life.css">
+</head>
+<body>
+    
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="./images/dogs-life-logo.svg" alt="A Dog's Life Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li class="menu"><a href="index.html">Home</a></li>
+                <li class="menu dropdown">
+                    <a href="javascript:void(0)" class="dropdown-button">Grooming Services</a>
+                    <div class="dropdown-menu">
+                        <a href="grooming-services.html">Grooming Services</a>
+                        <a href="select-good-pet.html">How to Select a Good Pet</a>
+                    </div>
+                </li>
+                <li class="menu"><a href="store-map.html">Map to Store</a></li>
+                <li class="here menu"><a href="contact-information.html">Contact Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="contact-info">
+            <div id="appointment">
+                <div id="appointment-form">
+                    <h1>Book an appointment</h1>
+                    <p><span class="required">*</span> Indicates required field</p>
+                    <form action="#">
+                        <div id="user-details">
+                            <label for="first-name last-name">Name <span class="required">*</span></label>
+                            <div id="fullname">
+                                <div id="fname">
+                                    <input type="text" name="first-name" placeholder="First name" required>
+                                </div>
+                                <div id="lname">
+                                    <input type="text" name="last-name" id="last-name" placeholder="Last name" required>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div id="user-contact">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <div id="email-field">
+                                <input type="email" name="email" id="email" placeholder="your.email@example.com" required>
+                            </div>
+                        </div>
+                        <div id="pet-info">
+                            <div id="petbreed">
+                                <label for="pet-breed">Pet Breed <span class="required">*</span></label>
+                                <div id="pet-breed-field">
+                                    <input type="text" name="pet-breed" id="pet-breed" required>
+                                </div>
+                            </div>
+                            <div id="petsize">
+                                <label for="pet-size">Pet Size <span class="required">*</span></label>
+                                <div id="pet-size-field">
+                                    <select name="pet-size" id="pet-size" required>
+                                        <option value="" disabled selected>Select pet size</option>
+                                        <option value="small">Small (up to 10kg)</option>
+                                        <option value="medium">Medium (11kg - 26kg)</option>
+                                        <option value="large">Large (26kg - 45kg)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="groomingoptions">
+                            <label for="grooming-options">Grooming Service(s) <span class="required">*</span></label>
+                            <div id="choices">
+                                <label for="option 1">
+                                    <input type="checkbox" id="option1" name="option1" value="Full Groom">
+                                    Full Groom
+                                    <br>
+                                </label>
+                                
+                                <label for="option 2">
+                                    <input type="checkbox" id="option2" name="option2" value="Bath & Brush">
+                                    Bath & Brush
+                                    <br>
+                                </label>
+
+                                <label for="option 3">
+                                    <input type="checkbox" id="option3" name="option3" value="Teeth Brushing">
+                                    Teeth Brushing
+                                    <br>
+                                </label>
+                                
+                                <label for="option 4">
+                                    <input type="checkbox" id="option4" name="option4" value="Nail Trimming">
+                                    Nail Trimming
+                                    <br>
+                                </label>
+
+                                <label for="option5">
+                                    <input type="checkbox" id="option5" name="option5" value="Ear Cleaning">
+                                    Ear Cleaning
+                                    <br>
+                                </label>
+
+                                <label for="option 6">
+                                    <input type="checkbox" id="option6" name="option6" value="Face Trim">
+                                    Face Trim
+                                    <br>
+                                </label>
+
+                                <label for="option 7">
+                                    <input type="checkbox" id="option7" name="option7" value="Sanitary Trim">
+                                    Sanitary Trim 
+                                    <br>
+                                </label> 
+
+                            </div>
+                        </div>
+                        <div id="form-submit">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="contact">
+                <h1>Contact us!</h1>
+                <address>
+                    7620 E McKellips Rd, <br>
+                    Scottsdale, AZ 85257 <br>
+                    <br> (602) 662-6262 <br>
+                    <br> <a href="mailto:adogslife@gmail.com">adogslife@gmail.com</a>
+                </address>
+
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 A Dog’s Life – All Rights Reserved.<br>
+        E McKellips Rd, Scottsdale, AZ 85257 | (602) 662-6262 | adogslife@gmail.com</p>
+    </footer>
+</body>
+</html>
