@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10 Homework</title>
+
+    <style>
+        #shirt {
+            width: 150px;
+        }
+        form {
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 460px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td rowspan="5" style="width: 180px;">
+                    <img id="shirt" src="./images/company-logo-shirt.jpeg" alt="Company Logo Shirt Yellow">
+                </td>
+                <th style="text-align: left; font-style: italic; font-size: larger;">
+                Company Logo Shirt
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="color">Color:</label>
+                    <select
+                        id="color-select"
+                        name="color"
+                        tabindex="1"
+                        autofocus
+                    >
+                        <option value="" disabled selected hidden>Select Color</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="blue">Blue</option>
+                        <option value="grey">Grey</option>
+                    </select>
+
+                    <label for="quantity">Quantity:</label>
+                    <input
+                        type="number"
+                        id="qnumber"
+                        name="quantity-number"
+                        style="width: 30px;"
+                        tabindex="2"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="size">Size:</label>
+                    <input 
+                        type="radio"
+                        id="size-small"
+                        name="size"
+                        value="small"
+                        tabindex="3"
+                    > Small
+                    <input 
+                        type="radio"
+                        id="size-medium"
+                        name="size"
+                        value="medium"
+                    > Medium
+                    <input 
+                        type="radio"
+                        id="size-large"
+                        name="size"
+                        value="large"
+                    > Large
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input
+                        type="checkbox"
+                        id="logo"
+                        name="include-logo"
+                        tabindex="4"
+                    >
+                    <label for="include-logo">Include Logo</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input
+                        type="file"
+                        id="logopic"
+                        name="logo-file"
+                        tabindex="5"
+                    >
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td>
+                    <input
+                        type="text" 
+                        id="fname" 
+                        name="first-name"
+                        placeholder="First Name"
+                        style="width: 215px;"
+                        tabindex="6"
+                    >
+                </td>
+                <td colspan="2">
+                    <input
+                        type="text"
+                        id="lname"
+                        name="last-name"
+                        placeholder="Last Name"
+                        style="width: 215px;"
+                        tabindex="7"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input
+                        type="text"
+                        id="st-address"
+                        name="street-address"
+                        placeholder="Street Address"
+                        style="width: 442px;"
+                        tabindex="8"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="City"
+                    style="width: 215px;"
+                    tabindex="9"
+                    >
+                </td>
+                <td>
+                    <input
+                        type="text"
+                        id="state"
+                        name="state"
+                        placeholder="State"
+                        style="width: 100px;"
+                        tabindex="10"
+                    >
+                </td>
+                <td>
+                    <input
+                        type="text"
+                        id="zip"
+                        name="zip-code"
+                        placeholder="ZIP"
+                        style="width: 103px;"
+                        tabindex="11"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input
+                        type="email"
+                        id="email-address"
+                        name="contact-email"
+                        placeholder="Email Address"
+                        style="width: 442px;"
+                        tabindex="12"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input
+                        type="tel"
+                        id="phone-num"
+                        name="phone-number"
+                        placeholder="Phone Number"
+                        style="width: 442px;"
+                        tabindex="13"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="delivery-date" style="width: 215px;font-size: small;">Best Delivery Date:</label>
+                </td>
+                <td colspan="2">
+                    <input
+                        type="date"
+                        id="deliver-date"
+                        name="delivery-date"
+                        style="width: 215px; font-family: Arial, Helvetica, sans-serif;"
+                        tabindex="14"
+                    >
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <textarea
+                        id="phone-num"
+                        name="phone-number"
+                        placeholder="Special Instructions"
+                        rows="2"
+                        cols="64"
+                        style="resize: vertical;  font-family: Arial, Helvetica, sans-serif;"
+                        tabindex="15"
+                    ></textarea>
+                </td>
+
+            </tr>
+            <tr style="text-align: right;">
+                <td colspan="3">
+                    <input
+                        type="submit"
+                        id="sumbit"
+                        name="sumbit-form"
+                        style="width: 103px;"
+                        tabindex="16"
+                    >
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
