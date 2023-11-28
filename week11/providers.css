@@ -1,0 +1,126 @@
+* {
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+}
+body {
+    background-color: rgb(16, 15, 15);
+}
+
+#bgimg {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(0deg, rgba(16, 15, 15), rgba(16, 15, 15, 0.276)), url("./images/global-connection.jpg");
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {  
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+}
+#title h1, #title p {
+    margin: 0;
+}
+#title h1 {
+    line-height: 1;
+}
+#title p {
+    padding: 5px;
+    font-size: x-large;
+    font-style: italic;
+    letter-spacing: 0.3px;
+}
+
+#intro-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+#intro {
+    width: 40%;
+    font-size: large;
+    line-height: 1.2;
+}
+#criteria-container {
+    width: 51%;
+    padding: 35px 30px 20px;
+    background-color: rgb(231, 229, 229);
+    border-radius: 5px;
+    box-shadow: 0 3px 15px #d79d15;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#criteria {
+    font-size: large;
+    line-height: 1.2;
+}
+#criteria h2 {
+    margin: 0;
+
+    background-image: linear-gradient(to bottom right, #215586,#896a22);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#criteria p, #criteria b, #criteria li {
+    color: black;
+}
+
+#providers, #top-provider {
+    width: 80%;
+    margin: 0 auto;
+}
+#providers {
+    background-color: rgb(231, 229, 229);
+    border-collapse: collapse;
+    border-style: hidden;
+    box-shadow: 0 3px 15px #d79d15;
+}
+#providers img {
+    height: 60px;
+    margin: 10px;
+}
+#providers a {
+    text-decoration: none;
+}
+#providers a:hover {
+    text-decoration: underline;
+}
+#providers th {
+    border: none;
+}
+#providers th, #providers td {
+    padding: 15px;
+    height: 25px;
+}
+#providers td {
+    border: solid 1px rgb(163, 163, 163);
+}
+#providers td, #providers li {
+    color: black;
+}
+#providers ul {
+    padding-left: 15px;
+}
+
+.features {
+    background-color: rgb(195, 195, 195);
+    font-weight: bold;
+    text-align: center;
+}
+
+.best-providers {
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 80px;
+}
