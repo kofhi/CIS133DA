@@ -93,9 +93,12 @@ body {
 #providers a {
     text-decoration: none;
 }
-#providers a:hover {
-    text-decoration: underline;
+#hostpapa a:hover {
+    color: #215586;
+    text-shadow: 2px 2px #ff0000;
 }
+
+
 #providers th {
     border: none;
 }
