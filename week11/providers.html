@@ -42,8 +42,6 @@
                 </ul>            
             </div>
         </div>
-
-
     </div>
 
 
@@ -52,21 +50,19 @@
     <table id="providers">
         <thead>
             <tr>
-                <th style="background-color: rgb(142, 142, 142); color: black;">
-                    Features
-                </th>
+                <th style="background-color: rgb(142, 142, 142);"></th>
                 <th id="hostpapa" style="background-color: 
-                #c5d183;">
+                #d5dea5;">
                     <img src="./images/hostpapa-logo.png" alt="HostPapa Logo"> <br>
-                    <a href="https://www.hostpapa.com/web-hosting-plan/">HostPapa</a>
+                    <a href="https://www.hostpapa.com" target="_blank">hostpapa.com</a>
                 </th>
-                <th style="background-color: #8d9bb2;">
+                <th id="ionos" style="background-color: #8d9bb2;">
                     <img src="./images/ionos-logo.png" alt="IONOS Logo"> <br>
-                    <a href="https://www.ionos.com/ecommerce-solutions/ecommerce-website-builder#plans" target="_blank">IONOS</a>
+                    <a href="https://www.ionos.com" target="_blank">ionos.com</a>
                 </th>
-                <th style="background-color: #b0cc8e;">
+                <th id="a2hosting" style="background-color: #b0cc8e;">
                     <img src="./images/a2hosting-logo.png" alt="A2 Hosting Logo"> <br>
-                    <a href="https://www.a2hosting.com/web-hosting/">A2 Hosting</a>
+                    <a href="https://www.a2hosting.com" target="_blank">a2hosting.com</a>
                 </th>
             </tr>            
         </thead>
@@ -87,16 +83,17 @@
             <tr>
                 <td rowspan="2" class="features">Monthly Fees</td>
                 <td>
-                    $3.42/mo for 12 Months <br>
-                    $2.99/mo for 24 Months <br>
-                    $2.56/mo for 36 Months
+                    <b>Current Promo Prices</b> <br>
+                    $3.42/mo (12 Months) <br>
+                    $2.99/mo (24 Months) <br>
+                    $2.56/mo (36 Months)
                 </td>
                 <td>
-                    Current Promo <br>
+                    <b>Current Promo Price</b> <br>
                     $1/mo for 6 months
                 </td>
                 <td>
-                    Current Promo <br>
+                    <b>Current Promo Prices</b> <br>
                     $8.99 (1 Month) <br>
                     $3.99/mo (12 & 36 Months) <br>
                     $12.99/mo (24 Months) <br>
@@ -104,17 +101,18 @@
             </tr>
             <tr>
                 <td>
-                    $8.95/mo for 6 Months <br>
-                    $7.95/mo for 12 Months <br>
-                    $6.95/mo for 24 Months <br>
-                    $5.95/mo for 36 Months
+                    <b>Original Prices</b> <br>
+                    $8.95/mo (6 Months) <br>
+                    $7.95/mo (12 Months) <br>
+                    $6.95/mo (24 Months) <br>
+                    $5.95/mo (36 Months)
                 </td>
                 <td>
-                    Original <br>
+                    <b>Original Price</b> <br>
                     $12/mo
                 </td>
                 <td>
-                    Original Cost <br>
+                    <b>Original Price</b> <br>
                     $14.99/mo
                 </td>
             </tr>
@@ -159,7 +157,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="features">MySQL Support</td>
+                <td class="features">MySQL Version</td>
                 <td>MySQL 5.7</td>
                 <td>MySQL 8</td>
                 <td>MySQL 8</td>
@@ -186,31 +184,46 @@
             </tr>
         </tbody>
     </table>
+
     <h2 class="best-providers">Overall Best Web Hosting Provider</h2>
-    <h3>HostPapa</h3>
-    <table id="top-provider">
-        <thead>
-            <tr>
-                <th>Advantages</th>
-                <th>Disadvantages</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Cheap plan prices</td>
-                <td>Wildcard SSL Certificate free for only one year (then $109.99/year)</td>
-            </tr>
-            <tr>
-                <td>Free domain registration</td>
-                <td>Automated Website Backup free for only one year (then $47.99/year)</td>
-            </tr>
-            <tr>
-                <td>Unlimited websites with Pro Plan</td>
-            </tr>
-            <tr>
-                <td>Unlimited Hosted Domains and Sub Domains</td>
-            </tr>
-        </tbody>
-    </table>
+
+    <div id="top-provider-container">
+        <div id="top-hosting-provider">
+            <img src="./images/hostpapa-logo.png" alt="HostPapa Logo">
+            <a href="https://www.hostpapa.com/web-hosting-plan/" target="_blank">HostPapa Pro Plan</a>
+            <p>
+                Good for starting out and expanding your work on a small budget, already providing you access to a lot of features.
+            </p>
+        </div>
+
+        <div id="top-provider">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Advantages</th>
+                        <th>Disadvantages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cheap plan prices current starting at $3.49/mo</td>
+                        <td>Needs long-time commitments to get the cheap prices</td>
+                    </tr>
+                    <tr>
+                        <td>Free domain registration</td>
+                        <td>Automated Website Backup free for only one year (then $47.99/year)</td>
+                    </tr>
+                    <tr>
+                        <td>Unlimited websites with Pro Plan</td>
+                        <td>Wildcard SSL Certificate free for only one year (then $109.99/year)</td>
+                    </tr>
+                    <tr>
+                        <td>Unlimited Hosted Domains and Sub Domains</td>
+                        <td>Currently uses an old MySQL version</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
