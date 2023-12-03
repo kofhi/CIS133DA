@@ -18,12 +18,12 @@
         <table>
             <tr>
                 <td>Amigo's Name</td>
-                <td><input type="text" name="amigo_name" id="amigo_name" required style="width:150px;" /></td>
+                <td><input type="text" name="amigo_name" id="amigo_name" required style="width:150px;" onchange="repeatValue()"></td>
             </tr>
             <tr>
                 <td>Amigo Type</td>
                 <td>
-                    <select name="amigo_type" id="amigo_type" style="width:100%">
+                    <select name="amigo_type" id="amigo_type" style="width:100%" onchange="showImg()">
                         <option>Select One</option>
                         <option value="dog">Dog</option>
                         <option value="cat">Cat</option>
@@ -34,13 +34,13 @@
             <tr>
                 <td>Amigo Size</td>
                 <td id="size_td">
-                    <input type="radio" name="amigo_size" id="small" value="small" checked>&nbsp;S
-                    <input type="radio" name="amigo_size" id="medium" value="medium">&nbsp;M
-                    <input type="radio" name="amigo_size" id="large" value="large">&nbsp;L
+                    <input type="radio" name="amigo_size" id="small" value="small" checked oninput="showImg()">&nbsp;S
+                    <input type="radio" name="amigo_size" id="medium" value="medium" oninput="showImg()">&nbsp;M
+                    <input type="radio" name="amigo_size" id="large" value="large" oninput="showImg()">&nbsp;L
                 </td>
             </tr>
             <tr>
-                <td colspan="2" style="text-align:right;"">
+                <td colspan="2" style="text-align:right;">
                     <input type="button" value="Cancel" onclick="cancelTicket()" />
                     <input type="button" value="Print Ticket" onclick="printTicket()" />
                 </td>
@@ -74,6 +74,40 @@
 
     function cancelTicket() {
         window.close();
+    }
+
+    function repeatValue() {
+        var amigoName = document.getElementById('amigo_name');
+        var jrAmigo = document.getElementById('amigoName');
+        jrAmigo.innerText = amigoName.value;        
+    }
+
+    function showImg() {
+
+        var size = document.getElementsByName('amigo_size');        
+
+        for (var i = 0; i < size.length; i++) {
+            if (size[i].checked == true) {
+
+                var amigoSize = size[i].value;
+            }            
+        }
+
+        var amigoType = document.getElementById('amigo_type').value;
+
+        var amigoPicture = document.getElementById('amigoPicture');
+
+        amigoPicture.src = `./images/${amigoType}-${amigoSize}.jpg`
+
+        amigoPicture.height = "150";
+
+    }
+
+    function printTicket() {
+
+        document.getElementById('form').style.display = "none";
+
+        alert("Ticket can now be printed!");
     }
 
 </script>
