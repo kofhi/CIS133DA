@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonoran Desert Club</title>
+    <link rel="stylesheet" href="nav-layout.css">
+    <link rel="stylesheet" href="pages.css">
+    <script src="https://kit.fontawesome.com/895df3ea9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./images/SDC-logo.svg" alt="Sonoran Desert Club Logo">
+                    </a>
+                </div>
+
+                <input type="radio" name="menu" id="menu-btn">
+                <input type="radio" name="menu" id="close-btn">
+
+                <ul class="nav-menu">
+                    <label for="close-btn" class="btn close-btn">
+                        <i class="fas fa-times"></i>
+                    </label>
+
+                    <li>
+                        <a href="index.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void(0)" class="desktop-view" id="active">
+                            What We Do 
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <input type="checkbox" id="show-dropdown">
+                        <label for="show-dropdown" class="mobile-menu" id="active">
+                            What We Do 
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </label>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="club-activities.html" id="active">Club Activities</a>
+                            </li>
+                            <li>
+                                <a href="at-toad-hall.html">At Toad Hall</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="connect.html">Connect</a>
+                    </li>
+
+                    <li>
+                        <a href="get.involved.html" id="nav-btn">Get Involved</a>
+                    </li>
+                </ul>
+                <label for="menu-btn" class="btn menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="yellow">
+            <div class="heading-box heading-yellow">
+                <h2>Club Activities</h2>
+
+                <p>With support from the Center for Nature and Urban Wildlife, the Sonoran Desert Club has been able to involve themselves in:</p>
+            </div>
+
+            <div id="club-acts-container">
+                <div class="activities">
+                    <img src="./images/community projects.png" alt="Community Projects Icon">
+                    <h3>Community Projects</h3>
+                </div>
+                <div class="activities">
+                    <img src="./images/preservation.png" alt="Preservation Icon">
+                    <h3>Preservation</h3>
+                </div>
+                <div class="activities">
+                    <img src="./images/restoration.png" alt="Restoration Icon">
+                    <h3>Restoration</h3>
+                </div>
+                <div class="activities">
+                    <img src="./images/conservation.png" alt="Conservation Icon">
+                    <h3>Conservation</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="green">
+            <div id="past-acts-header">
+                <h2>Past Activities</h2>
+            </div>
+
+            <div class="event">
+                <img src="./images/cnuw-plant-sale.png" alt="Picture of plants at CNUW's Plant Sale.">
+                <h2>CNUW Plant Sale</h2>
+                <p>
+                    Club members were able to help CNUW and learn how to grow and cultivate native plants throughout the semester, and help people learn and pick the right plants during the sale.
+                </p>
+            </div>
+            <div class="event">
+                <img src="./images/monarch-waystation-planting.jpg" alt="Image of Sonoran Desert Club members planting Monarch Waystations at Two Waters Circle.">
+                <h2>Monarch Waystation Planting</h2>
+                <p>
+                    Sonoran Desert Club members participated in adding host plants like milkweed to provide a habitat on campus for the endangered monarch butterflies and be able to attract and support pollinators.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="ftr-contact">
+                <p>
+                    <b> Sonoran Desert Club @ SCC </b><br>
+                    9000 E Chaparral Rd, Scottsdale, AZ 85256
+                </p>
+            </div>
+
+            <div class="ftr-sms">
+                <a href="https://www.instagram.com/cnuw_cnuw/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

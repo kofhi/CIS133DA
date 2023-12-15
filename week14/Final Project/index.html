@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonoran Desert Club</title>
+    <link rel="stylesheet" href="nav-layout.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="img-slider.css">
+    <script src="https://kit.fontawesome.com/895df3ea9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./images/SDC-logo.svg" alt="Sonoran Desert Club Logo">
+                    </a>
+                </div>
+
+                <input type="radio" name="menu" id="menu-btn">
+                <input type="radio" name="menu" id="close-btn">
+
+                <ul class="nav-menu">
+                    <label for="close-btn" class="btn close-btn">
+                        <i class="fas fa-times"></i>
+                    </label>
+
+                    <li>
+                        <a href="index.html" id="active">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void(0)" class="desktop-view">
+                            What We Do 
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <input type="checkbox" id="show-dropdown">
+                        <label for="show-dropdown" class="mobile-menu">
+                            What We Do 
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </label>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="club-activities.html">Club Activities</a>
+                            </li>
+                            <li>
+                                <a href="at-toad-hall.html">At Toad Hall</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="connect.html">Connect</a>
+                    </li>
+
+                    <li>
+                        <a href="get.involved.html" id="nav-btn">Get Involved</a>
+                    </li>
+                </ul>
+                <label for="menu-btn" class="btn menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="home-img-bg">
+            <div id="home-box-one">
+
+                <div id="intro">
+                    <h1>
+                        Learn and preserve the wildlife of Arizona on campus
+                    </h1>
+                    <p>
+                        Explore and discover interesting plants and animals native to Arizona from all around the state, while being able to learn from and connect with professionals, enthusiasts, as well as like-minded learners through different projects and activities, all at Scottsdale Community College.
+                    </p>                        
+                </div>
+                
+                <div class="img-slider">
+
+                    <input type="radio" name="img-slider" id="slide1" checked>
+                    <input type="radio" name="img-slider" id="slide2">
+                    <input type="radio" name="img-slider" id="slide3">
+                    <input type="radio" name="img-slider" id="slide4">
+                    <div id="slides">
+                        <div id="overflow">
+
+                            <div class="inner">
+
+                                <div class="slide">
+                                    <div class="slide-content">
+                                        <img src="./images/reptile-pavillon.JPG" alt="Reptile Pavillion at SCC">
+                                    </div>
+                                </div>
+
+                                <div class="slide">
+                                    <div class="slide-content">
+                                        <img src="./images/garden-path.jpg" alt="Wildlife garden pathway at SCC">
+                                    </div>
+                                </div>
+
+                                <div class="slide">
+                                    <div class="slide-content">
+                                        <img src="./images/cnuw-bldg.jpg" alt="Center for Nature and Urban Wildlife Building at SCC">
+                                    </div>
+                                </div>
+
+                                <div class="slide">
+                                    <div class="slide-content">
+                                        <img src="./images/pond-bloom.jpg" alt="Two Waters Circle Pond at SCC">
+                                    </div>
+                                </div> 
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="controls">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
+
+                    <div id="bullets">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="green">
+            <div class="heading-box heading-green">
+                <h2>What is the Sonoran Desert Club?</h2>                
+            </div>
+
+
+            <div id="about-sdc-box">
+                <div id="club-info">
+                    <img src="./images/about-club.png" alt="Hand showing love for nature">
+                    <p>
+                        An organization under the Center for Nature and Urban Wildlife Department that provides students of any program the opportunity to understand, appreciate, and share their passion of the wildlife, ecology, and biodiversity of the Sonoran Desert to others.
+                    </p>
+                </div>
+
+                <div id="people-info">
+                    <img src="./images/club-people.png" alt="Person with multiple skillsets">
+                    <p>
+                        A place that welcomes all talent, where students can partake in different projects and activities based on their skills and preferences that will help educate and promote the flowering fauna.
+                    </p>
+                </div>
+
+
+                <a href="connect.html" id="connect">Connect</a>
+                
+                <a href="get.involved.html" id="get-involved">Get Involved</a>
+
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="ftr-contact">
+                <p>
+                    <b> Sonoran Desert Club @ SCC </b><br>
+                    9000 E Chaparral Rd, Scottsdale, AZ 85256
+                </p>
+            </div>
+
+            <div class="ftr-sms">
+                <a href="https://www.instagram.com/cnuw_cnuw/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://discord.gg/3a7rtCm5Hh">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonoran Desert Club</title>
+    <link rel="stylesheet" href="nav-layout.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="img-slider.css">
+    <script src="https://kit.fontawesome.com/895df3ea9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./images/SDC-logo.svg" alt="Sonoran Desert Club Logo">
+                    </a>
+                </div>
+
+                <input type="radio" name="menu" id="menu-btn">
+                <input type="radio" name="menu" id="close-btn">
+
+                <ul class="nav-menu">
+                    <label for="close-btn" class="btn close-btn">
+                        <i class="fas fa-times"></i>
+                    </label>
+
+                    <li>
+                        <a href="index.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void(0)" class="desktop-view" id="active">
+                            What We Do 
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <input type="checkbox" id="show-dropdown">
+                        <label for="show-dropdown" class="mobile-menu" id="active">
+                            What We Do 
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </label>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="club-activities.html">Club Activities</a>
+                            </li>
+                            <li>
+                                <a href="at-toad-hall.html" id="active">At Toad Hall</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="connect.html">Connect</a>
+                    </li>
+
+                    <li>
+                        <a href="get.involved.html" id="nav-btn">Get Involved</a>
+                    </li>
+                </ul>
+                <label for="menu-btn" class="btn menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="green">
+
+        <section>
+            <div id="toad-hall-box">
+
+                <div class="img-slider">
+
+                    <input type="radio" name="img-slider" id="slide1" checked>
+                    <input type="radio" name="img-slider" id="slide2">
+                    <input type="radio" name="img-slider" id="slide3">
+                    <input type="radio" name="img-slider" id="slide4">
+                    <div id="slides">
+                        <div id="overflow">
+
+                            <div class="inner">
+
+                                <div class="slide">
+                                    <div class="slide-content">
+                                        <img src="./images/sonoran-desert-toad.png" alt="Sonoran desert toad up close.">
+                                    </div>
+                                </div>
+
+                                <div class="slide">
+                                    <div class="slide-content">
+                                        <img src="./images/diamondback-head.jpg" alt="Diamondback snake head photo.">
+                                    </div>
+                                </div>
+
+                                <div class="slide">
+                                    <div class="slide-content">
+                                        <img src="./images/canyon-treefrogs.jpg" alt="Top-down photo of canyon treefrogs.">
+                                    </div>
+                                </div>
+
+                                <div class="slide">
+                                    <div class="slide-content">
+                                        <img src="./images/tortoise.JPG" alt="Sonoran desert tortoise.">
+                                    </div>
+                                </div> 
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="controls-white">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
+
+                    <div id="bullets-white">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
+
+                </div>
+
+                <div id="toad-hall-desc">
+                    <h1>Sonoran Desert Club at Toad Hall</h1>
+                    <p>
+                        One of CNUW’s six exhibits, Toad Hall is home to a collection of different native wildlife species including Gila Monsters, Desert Tortoises, Toads, Snakes, and many more. <br>
+                        <br>
+                        With partnerships with CNUW, Sonoran Desert Club members have the opportunity to share their passion with wildlife, especially animals, to fellow students and community members of all ages by creating interactive table stations during Open House days.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="heading-box heading-green">
+                <h2>Table Station Types</h2>
+            </div>
+
+            <div id="table-box">
+
+                <table id="table-types">
+                    <tr>
+                        <th></th>
+                        <th>Animal Showcase</th>
+                        <th>Interactive Mini Game</th>
+                        <th>Species Discussion</th>
+                    </tr>
+    
+                    <tr>
+                        <td class="criteria">Description</td>
+    
+                        <td>
+                            Be able to bring out one of Toad Hall’s non-toxic animal residents to help people get to know them more and up close.
+                        </td>
+    
+                        <td>
+                            Have visitors interact and play a type of mini game where they are able to learn interesting facts about the wildlife.
+                        </td>
+    
+                        <td>
+                            Talk about and introduce a biodiversity topic you are passionate about that is not present in Toad Hall.
+    
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="criteria">Table Activities</td>
+    
+                        <td>
+                            <ul>
+                                <li>
+                                    Let people touch and interact with the animal. 
+                                </li>
+                                <br>
+                                <li>
+                                    Tell interesting facts about the species.
+                                </li>
+                                <br>
+                                <li>
+                                    Tell interesting stories of what the animal does on normal days at CNUW.
+                                </li>
+                            </ul>
+                        </td>
+    
+                        <td>
+                            <ul>
+                                <li>
+                                    Host guessing game activities to foster analytical thinking for a deeper understanding of wildlife.
+                                </li>
+                                <br>
+                                <li>
+                                    Let people play games that focus on the mundane aspects of life to allow visitors to relate and grasp the topic and purpose of species more.
+                                </li>
+                            </ul>
+                        </td>
+    
+                        <td>
+                            <ul>
+                                <li>
+                                    Present visual graphics, samples, or any relevant tools to help people visualize and understand the species you are advocating about.
+                                </li>
+                                <br>
+                                <li>
+                                    Make interesting discussions that explain why your topic is interesting and important.
+                                </li>
+                            </ul>
+                        </td>
+    
+                    </tr>
+                </table>
+    
+            </div>
+
+            <div id="sign-up-box">
+                <h2>Interested in presenting?</h2>
+                <a href="get.involved.html">SIGN UP</a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="ftr-contact">
+                <p>
+                    <b> Sonoran Desert Club @ SCC </b><br>
+                    9000 E Chaparral Rd, Scottsdale, AZ 85256
+                </p>
+            </div>
+
+            <div class="ftr-sms">
+                <a href="https://www.instagram.com/cnuw_cnuw/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

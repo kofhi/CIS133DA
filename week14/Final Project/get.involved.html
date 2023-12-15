@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonoran Desert Club</title>
+    <link rel="stylesheet" href="nav-layout.css">
+    <link rel="stylesheet" href="pages.css">
+    <script src="https://kit.fontawesome.com/895df3ea9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./images/SDC-logo.svg" alt="Sonoran Desert Club Logo">
+                    </a>
+                </div>
+
+                <input type="radio" name="menu" id="menu-btn">
+                <input type="radio" name="menu" id="close-btn">
+
+                <ul class="nav-menu">
+                    <label for="close-btn" class="btn close-btn">
+                        <i class="fas fa-times"></i>
+                    </label>
+
+                    <li>
+                        <a href="index.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void(0)" class="desktop-view">
+                            What We Do 
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <input type="checkbox" id="show-dropdown">
+                        <label for="show-dropdown" class="mobile-menu">
+                            What We Do 
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </label>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="club-activities.html">Club Activities</a>
+                            </li>
+                            <li>
+                                <a href="at-toad-hall.html">At Toad Hall</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="connect.html">Connect</a>
+                    </li>
+
+                    <li>
+                        <a href="get.involved.html" id="nav-btn-active">Get Involved</a>
+                    </li>
+                </ul>
+                <label for="menu-btn" class="btn menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section>
+            <div class="heading-box heading-white">
+                <h2>Interested? Come and Join Us!</h2>
+            </div>
+
+            <div id="button-box">
+                <button class="form-btn" id="member-form-btn" value="club-member" onclick="showMemberForm()">
+                    <img src="./images/add-friend.png" alt="Become a member button icon.">
+                    Become a Sonoran Desert Club Member
+                </button>
+
+                <button class="form-btn" id="presentation-form-btn" value="presentation" onclick="showPresentationForm()">
+                    <img src="./images/hand-up (1).png" alt="Volunteer button icon.">
+                    Present About Wildlife at Toad Hall
+                </button>
+            </div>
+
+            <form action="" class="sign-up-form" id="club-sign-up">
+                <table>
+                    <tr>
+                        <td colspan="3">
+                            <label for="first-name last-name" class="labels">Full Name</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+                        </td>
+                        <td>
+                            <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="age" class="labels">Age</label>
+                        </td>
+                        <td>
+                            <label for="meid" class="labels">MEID</label>
+                        </td>
+                        <td>
+                            <label for="phone-num" class="labels">Phone Number</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="number" name="age" id="age" required>
+                        </td>
+                        <td>
+                            <input type="text" name="meid" id="meid" required>
+                        </td>
+                        <td>
+                            <input type="tel" name="phone-num" id="phone-num" required>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="3">
+                            <label for="email" class="labels">Email</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">
+                            <input type="email" name="email" id="email" placeholder="School or personal email" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">
+                            <label class="checkboxes">
+                                <input 
+                                    type="checkbox" 
+                                    name="email-consent" 
+                                    id="email-consent" 
+                                    value="yes-emails" 
+                                    required
+                                >
+                                    I agree to periodically receive club updates, events and announcements through the email I provided.
+                            </label>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <label for="sem-select" class="labels">Semester</label>
+                        </td>
+                        <td>
+                            <label for="meeting-days" class="labels">Meeting Days I can attend</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <select
+                            id="sem-select"
+                            name="sem-select"
+                            >
+                                <option value="" disabled selected hidden>Select Semester</option>
+                                <option value="Spring">Spring</option>
+                                <option value="Summer">Summer</option>
+                                <option value="Fall">Fall</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <select
+                            id="meeting-days"
+                            name="meeting-days"
+                            >
+                                <option value="" disabled selected hidden>Select Days</option>
+                                <option value="Mondays, 2-3pm">Mondays, 2-3pm</option>
+                                <option value="Tuesdays, 2-3pm">Tuesdays, 2-3pm</option>
+                                <option value="Mondays and Tuesdays, 2-3pm">Mondays and Tuesdays, 2-3pm</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">
+                            <label for="member-activities" class="labels">Activities I would like to participate in:</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <label class="checkboxes">
+                                <input 
+                                    type="checkbox" 
+                                    name="member-activities" 
+                                    id="member-activities" 
+                                    value="Plants"
+                                > 
+                                    Plant care, restoration, and conservation
+                            </label>
+
+                            <br>
+
+                            <label class="checkboxes">
+                                <input 
+                                    type="checkbox" 
+                                    name="member-activities" 
+                                    id="member-activities" 
+                                    value="Animals"
+                                > 
+                                    Animal care and conservation
+                            </label>
+
+                        </td>
+
+                        <td>
+                            <label class="checkboxes">
+                                <input 
+                                    type="checkbox" 
+                                    name="member-activities" 
+                                    id="member-activities" 
+                                    value="Research"
+                                > 
+                                    Wildlife research and educating
+                            </label>
+
+                            <br>
+
+                            <label class="checkboxes">
+                                <input 
+                                    type="checkbox" 
+                                    name="member-activities" 
+                                    id="member-activities" 
+                                    value="Arts"
+                                > 
+                                    Arts and crafts
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3" class="labels">
+                            <label for="activity-suggestions">Other Activity Suggestions</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">
+                            <textarea name="activity-suggestions" id="activity-suggestions" cols="30" rows="4"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3" class="form-controls">
+                            <input type="button" name="submit" class="submit-btn" value="submit" onclick="formSubmit()">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+
+            <form action="" class="sign-up-form" id="presentation-sign-up">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <label for="first-name last-name" class="labels">Full Name</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+                        </td>
+                        <td>
+                            <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="meid" class="labels">MEID</label>
+                        </td>
+                        <td>
+                            <label for="phone-num" class="labels">Phone Number</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" name="meid" id="meid" required>
+                        </td>
+                        <td>
+                            <input type="tel" name="phone-num" id="phone-num" required>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2">
+                            <label for="email" class="labels">Email</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input type="email" name="email" id="email" placeholder="School or personal email" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="date" class="labels">Presentation Date</label>
+                        </td>
+                        <td>
+                            <label for="type" class="labels">Presentation Type</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="date" name="date" id="date">
+                        </td>
+
+                        <td>
+                            <select
+                            id="presentation-type"
+                            name="presentation-type"
+                            >
+                                <option value="" disabled selected hidden>Select Type</option>
+                                <option value="Animal Showcase">Animal Showcase</option>
+                                <option value="Interactive Mini Games">Interactive Mini Games</option>
+                                <option value="Species Discussion">Species Discussion</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <label for="topic" class="labels">Topic</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" name="topic" id="topic" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="labels">
+                            <label for="presentation-desc">Description</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <textarea name="activity-suggestions" id="activity-suggestions" cols="30" rows="4"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3" class="form-controls">
+                            <input type="button" name="submit" class="submit-btn" value="submit" onclick="formSubmit()">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+        </section>
+        
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="ftr-contact">
+                <p>
+                    <b> Sonoran Desert Club @ SCC </b><br>
+                    9000 E Chaparral Rd, Scottsdale, AZ 85256
+                </p>
+            </div>
+
+            <div class="ftr-sms">
+                <a href="https://www.instagram.com/cnuw_cnuw/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    function showMemberForm() {
+
+        document.getElementById('club-sign-up').style.display = "block";
+
+        document.getElementById('presentation-sign-up').style.display = "none";
+
+        document.getElementById('member-form-btn').style.backgroundColor = "#F4D68F";
+
+        document.getElementById('presentation-form-btn').style.backgroundColor = "#FDF7E9";
+
+    }
+
+    function showPresentationForm() {
+
+        document.getElementById('presentation-sign-up').style.display = "block";
+
+        document.getElementById('club-sign-up').style.display = "none";
+
+        document.getElementById('presentation-form-btn').style.backgroundColor = "#F4D68F";
+
+        document.getElementById('member-form-btn').style.backgroundColor = "#FDF7E9";
+
+    }
+
+    function formSubmit() {
+        document.getElementById('club-sign-up').style.display = "none";
+
+        document.getElementById('presentation-sign-up').style.display = "none";
+
+        document.getElementById('member-form-btn').style.backgroundColor = "#FDF7E9";
+
+        document.getElementById('presentation-form-btn').style.backgroundColor = "#FDF7E9";
+
+        alert("Your form has been submitted! Please wait 2-5 business days for confirmation.")
+
+    }
+</script>
+
+</html>
